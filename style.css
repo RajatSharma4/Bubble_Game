@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(172, 224, 172);
+}
+#panel{
+    overflow: hidden;
+    height: 80%;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+#tpanel{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 0 30%;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(90, 135, 90);
+}
+.elem{
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+.elem h2{
+    font-weight: 600;
+    font-size: 24px;
+}
+.box{
+    color: rgb(12, 140, 12);
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+#pbottom{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    height: calc(100% - 80px);
+    width: 100%;
+   
+}
+.bubble{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 50px;
+    font-size: 20px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(90, 135, 90);
+    font-weight: 600;
+}
+.bubble:hover{
+    cursor: pointer;
+    background-color: rgb(8, 54, 8);
+}
+@media (max-width: 600px){
+    .bubble{
+        height: 30px;
+        width: 30px;
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+    #panel{
+    overflow: hidden;
+    height: 90%;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+#tpanel{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 0 20%;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(90, 135, 90);
+}
+.elem h2{
+    font-weight: 600;
+    font-size: 15px;
+}
+.box{
+    color: rgb(12, 140, 12);
+    font-weight: 600;
+    font-size: 12px;
+    /* padding: 6px; */
+    
+    background-color: #fff;
+    border-radius: 5px;
+}
+.elem{
+    align-items: center;
+    /* justify-content: space-around; */
+    display: flex;
+    gap: 10px;
+    padding-right: 8px;
+    /* margin-left: -10px; */
+}
+}
